@@ -8,6 +8,11 @@ class Index extends base
 {
     public function index()
     {
-        
+        return $this->fetch();
+    }
+
+    public function index_mo()
+    {
+        return $this->fetch();
     }
 }
