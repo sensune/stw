@@ -47,31 +47,48 @@
                         <table class="table table-striped table-bordered table-hover dataTables-example">
                             <thead>
                                 <tr>
-
-                                    <th>类型</th>
+                                    <th>id</th>
+                                    <th>产品名称</th>
+                                    <th>最大重复峰值反向电压<br>VRRM(V)</th>
+                                    <th>最大正向平均整流电流<br>I(AV)(A)</th>
+                                    <th>正向峰值浪涌电流@8.3ms 正弦电波<br>IFSM(A)</th>
+                                    <th>最大正向电压@TA=25℃<br>VF(V)</th>
+                                    <th>最大正向电压@TA=25℃<br>IF(A)</th>
+                                    <th>最大反向电流RRMTA=25℃<br>IR(µA)</th>
+                                    <th>封装形式<br>Package & Size</th>
                                     <th>操作</th>
                                 </tr>
                             </thead>
                             <tbody>
-           
-                                <tr class="gradeX">
-
-                                    <td>整流二极管(贴片)</td>
+                            {foreach name="data" item="v"}
+                            <tr class="gradeX">
+                                    <td>{$v.id}</td>
+                                    <td>{$v.name}</td>
+                                    <td>{$v.vrrm}</td>
+                                    <td>{$v.iava}</td>
+                                    <td>{$v.ifsma}</td>
+                                    <td>{$v.vfv}</td>
+                                    <td>{$v.ifa}</td>
+                                    <td>{$v.ira}</td>
+                                    <td>{$v.size}</td>
                                     <td class="center">    
-                                        <form method="post" action="{:url('admin/Product/product_add')}" class="form-signin" enctype="multipart/form-data" >  
-                                            <input name="excel" type="file" class="form-control">
-                                            <input type="hidden" value="zl_tp">
-                                            <button class="btn ">导入</button> 
-                                        </form>  
+                                        <a href="{:url('admin/product/product_edit',['id'=>$v['id']])}"><button class="btn btn-info product_edit" type="button"><i class="fa fa-paste"></i>编辑</button></a>
+                                        <button class="btn btn-danger product_del" data-id="{$v['id']}" type="button"><i class="fa fa-trash-o"></i>删除</button>
                                     </td>
                                 </tr>
-
-
+                            {/foreach}
                             </tbody>
                             <tfoot>
                                 <tr>
-
-                                    <th>类型</th>
+                                    <th>id</th>
+                                    <th>产品名称</th>
+                                    <th>最大重复峰值反向电压<br>VRRM(V)</th>
+                                    <th>最大正向平均整流电流<br>I(AV)(A)</th>
+                                    <th>正向峰值浪涌电流@8.3ms 正弦电波<br>IFSM(A)</th>
+                                    <th>最大正向电压@TA=25℃<br>VF(V)</th>
+                                    <th>最大正向电压@TA=25℃<br>IF(A)</th>
+                                    <th>最大反向电流RRMTA=25℃<br>IR(µA)</th>
+                                    <th>封装形式<br>Package & Size</th>
                                     <th>操作</th>
                                 </tr>
                             </tfoot>
@@ -178,12 +195,6 @@
 
         }
     </script>
-
-    
-
-
-    
-    
 
 </body>
 
