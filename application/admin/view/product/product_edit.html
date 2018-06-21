@@ -47,117 +47,81 @@
                             </div>
 
                             <div class="form-group">
-                                <label class="col-sm-2 control-label">封面：</label>
+                                <label class="col-sm-2 control-label">pdf：</label>
                                 <div class="col-sm-8">
                                     <input  name="cover" minlength="1" type="file" class="form-control"  aria-required="false">
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label class="col-sm-2 control-label">风扇直径：</label>
+                                <label class="col-sm-2 control-label">最大重复峰值反向电压 VRRM(V)：</label>
                                 <div class="col-sm-8">
-                                    <input id="cname" name="diameter" minlength="1" type="text" class="form-control" required="" aria-required="true" value="{$detail['diameter']}">
+                                    <input id="cname" name="vrrm" minlength="1" type="text" class="form-control" required="" aria-required="true" value="{$detail['vrrm']}">
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label class="col-sm-2 control-label">功率：</label>
+                                <label class="col-sm-2 control-label">最大正向平均整流电流 I(AV)(A)：</label>
                                 <div class="col-sm-8">
-                                    <input id="cname" name="work" minlength="1" type="text" class="form-control" required="" aria-required="true" value="{$detail['work']}">
-                                </div>
-                            </div>
-                           
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label">转速：</label>
-                                <div class="col-sm-8">
-                                    <input id="cname" name="speed" minlength="1" type="text" class="form-control" required="" aria-required="true" value="{$detail['speed']}">
+                                    <input id="cname" name="iava" minlength="1" type="text" class="form-control" required="" aria-required="true" value="{$detail['iava']}">
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label class="col-sm-2 control-label">电源参数：</label>
+                                <label class="col-sm-2 control-label">正向峰值浪涌电流@8.3ms正弦电波 IFSM(A)：</label>
                                 <div class="col-sm-8">
-                                    <input id="cname" name="power" minlength="1" type="text" class="form-control" required="" aria-required="true" value="{$detail['power']}">
-                                </div>
-                            </div>
-                           
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label">重量：</label>
-                                <div class="col-sm-8">
-                                    <input id="cname" name="weight" minlength="1" type="text" class="form-control" required="" aria-required="true" value="{$detail['weight']}">
+                                    <input id="cname" name="ifsma" minlength="1" type="text" class="form-control" required="" aria-required="true" value="{$detail['ifsma']}">
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label class="col-sm-2 control-label">面积：</label>
+                                <label class="col-sm-2 control-label">最大正向电压@TA=25℃ VF(V)：</label>
                                 <div class="col-sm-8">
-                                    <input id="cname" name="area" minlength="1" type="text" class="form-control" required="" aria-required="true" value="{$detail['area']}">
+                                    <input id="cname" name="vfv" minlength="1" type="text" class="form-control" required="" aria-required="true" value="{$detail['vfv']}">
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label class="col-sm-2 control-label">风量：</label>
+                                <label class="col-sm-2 control-label">最大正向电压@TA=25℃ IF(A)：</label>
                                 <div class="col-sm-8">
-                                    <input id="cname" name="blow" minlength="1" type="text" class="form-control" required="" aria-required="true" value="{$detail['blow']}">
+                                    <input id="cname" name="ifa" minlength="1" type="text" class="form-control" required="" aria-required="true" value="{$detail['ifa']}">
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label class="col-sm-2 control-label">减速电机：</label>
+                                <label class="col-sm-2 control-label">最大反向电流RRMTA=25℃ IR(µA)：</label>
                                 <div class="col-sm-8">
-                                    <input id="cname" name="gear" minlength="1" type="text" class="form-control" required="" aria-required="true" value="{$detail['gear']}">
+                                    <input id="cname" name="ira" minlength="1" type="text" class="form-control" required="" aria-required="true" value="{$detail['ira']}">
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label class="col-sm-2 control-label">变频器：</label>
+                                <label class="col-sm-2 control-label">封装形式  Package & Size：</label>
                                 <div class="col-sm-8">
-                                    <input id="cname" name="frequency" minlength="1" type="text" class="form-control" required="" aria-required="true" value="{$detail['frequency']}">
+                                    <input id="cname" name="size" minlength="1" type="text" class="form-control" required="" aria-required="true" value="{$detail['size']}">
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label class="col-sm-2 control-label">轮毂：</label>
-                                <div class="col-sm-8">
-                                    <input id="cname" name="hub" minlength="1" type="text" class="form-control" required="" aria-required="true" value="{$detail['hub']}">
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label">材质/厚度：</label>
-                                <div class="col-sm-8">
-                                    <input id="cname" name="material" minlength="1" type="text" class="form-control" required="" aria-required="true" value="{$detail['material']}">
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label">叶片数量：</label>
-                                <div class="col-sm-8">
-                                    <input id="cname" name="quantity" minlength="1" type="text" class="form-control" required="" aria-required="true" value="{$detail['quantity']}">
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label">叶片颜色：</label>
-                                <div class="col-sm-8">
-                                    <input id="cname" name="color" minlength="1" type="text" class="form-control" required="" aria-required="true" value="{$detail['color']}">
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label">应用范围：</label>
-                                <div class="col-sm-8">
-                                    <input id="cname" name="range" minlength="1" type="text" class="form-control" required="" aria-required="true" value="{$detail['range']}">
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                    <label class="col-sm-2 control-label">产品分类：</label>
-                                    <select class=" col-sm-8" name="classify">
-                                        <option value="三叶扇" {if condition="$detail['classify'] eq '三叶扇'"}selected="selected"{/if}>三叶扇</option>
-                                        <option value="四叶扇" {if condition="$detail['classify'] eq '四叶扇'"}selected="selected"{/if}>四叶扇</option>
-                                        <option value="五叶扇" {if condition="$detail['classify'] eq '五叶扇'"}selected="selected"{/if}>五叶扇</option>
-                                    </select>
+                                <label class="col-sm-2 control-label">产品分类：</label>
+                                <select class=" col-sm-8" name="classify">
+                                    <option value="整流二极管贴片" {if condition="$detail['classify'] eq '整流二极管贴片'"}selected="selected"{/if}>整流二极管贴片</option>
+                                    <option value="整流二极管插片" {if condition="$detail['classify'] eq '整流二极管插片'"}selected="selected"{/if}>整流二极管插片</option>
+                                    <option value="肖特基二极管贴片" {if condition="$detail['classify'] eq '肖特基二极管贴片'"}selected="selected"{/if}>肖特基二极管贴片</option>
+                                    <option value="肖特基二极管插片" {if condition="$detail['classify'] eq '肖特基二极管插片'"}selected="selected"{/if}>肖特基二极管插片</option>
+                                    <option value="稳压二极管贴片" {if condition="$detail['classify'] eq '稳压二极管贴片'"}selected="selected"{/if}>稳压二极管贴片</option>
+                                    <option value="稳压二极管插片" {if condition="$detail['classify'] eq '稳压二极管插片'"}selected="selected"{/if}>稳压二极管插片</option>
+                                    <option value="快恢复二极管贴片" {if condition="$detail['classify'] eq '快恢复二极管贴片'"}selected="selected"{/if}>快恢复二极管贴片</option>
+                                    <option value="快恢复二极管插片" {if condition="$detail['classify'] eq '快恢复二极管插片'"}selected="selected"{/if}>快恢复二极管插片</option>
+                                    <option value="超快恢复二极管贴片" {if condition="$detail['classify'] eq '超快恢复二极管贴片'"}selected="selected"{/if}>超快恢复二极管贴片</option>
+                                    <option value="超快恢复二极管插片" {if condition="$detail['classify'] eq '超快恢复二极管插片'"}selected="selected"{/if}>超快恢复二极管插片</option>
+                                    <option value="玻璃钝化二极管贴片" {if condition="$detail['classify'] eq '玻璃钝化二极管贴片'"}selected="selected"{/if}>玻璃钝化普通整流管插件</option>
+                                    <option value="玻璃钝化二极管插片" {if condition="$detail['classify'] eq '玻璃钝化二极管插片'"}selected="selected"{/if}>玻璃钝化快恢复整流管插件</option>
+                                    <option value="TVS二极管贴片" {if condition="$detail['classify'] eq 'TVS二极管贴片'"}selected="selected"{/if}>TVS二极管贴片</option>
+                                    <option value="TVS二极管插片" {if condition="$detail['classify'] eq 'TVS二极管插片'"}selected="selected"{/if}>TVS二极管插片</option>
+                                    <option value="高结温MIN整流桥-桥堆" {if condition="$detail['classify'] eq '高结温MIN整流桥-桥堆'"}selected="selected"{/if}>高结温MIN整流桥-桥堆</option>
+                                    <option value="MIN整流桥-桥堆" {if condition="$detail['classify'] eq 'MIN整流桥-桥堆'"}selected="selected"{/if}>MIN整流桥-桥堆</option>
+                                </select>
                             </div>
 
 

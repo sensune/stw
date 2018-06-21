@@ -24,12 +24,46 @@ class Product extends Base
         return $this->fetch();
     }
 
+
+    
     /**
      * 产品添加
      */
     public function product_add()
     {
-
+        if (Request::instance()->isPost())
+        {
+            $file = request()->file('cover');
+    		if(isset($file)){
+                $info = $file->move(ROOT_PATH . 'public/uploads');  
+          
+                if($info){  
+                        // 成功上传后 获取上传信息  
+                    $a=$info->getSaveName();  
+                    $imgp= str_replace("\\","/",$a);  
+                    $imgpath='uploads/'.$imgp;  
+                    $_POST['cover']= $imgpath;
+                    $re = Db::table('product')->insert($_POST);
+                    if ($re) {
+                        $this->success('添加成功','admin/product/index');
+                    }else{
+                        $this->error('添加失败');
+                    }
+                    
+                }else{
+                    echo $file->getError(); 
+                }
+            }else{
+            	$re2 = Db::table('product')->insert($_POST);
+                if ($re2)
+                {
+                    $this->success('添加成功','admin/product/index');
+                }else{
+                    $this->error("添加成功");
+                }
+            }
+        }
+        return $this->fetch();
     }
 
     /**

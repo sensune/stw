@@ -44,7 +44,7 @@
 </script>
 <style>
 	.sidebar {
-  
+        padding-left: 32%;
     text-align: center;
 }
 .sidebar .btn-sideNav:hover {
@@ -64,13 +64,13 @@
     font-size: 12px;
     text-align: left;
     padding-left: 31px;
-    background: #E1E6E9 url(__PUBLIC__/phy-img/ico_1.jpg) no-repeat;
+    background: url(__PUBLIC__/phy-img/ico_1.jpg) no-repeat;
 }
 .sidebar .sub-sideNav a.sub-item {
     color: #696969;
 }
 .sidebar .sub-sideNav a {
-    background: #DEE2E5 url(__PUBLIC__/phy-img/ico_2.jpg) no-repeat;
+    background:  url(__PUBLIC__/phy-img/ico_2.jpg) no-repeat;
     line-height: 28px;
     font-size: 12px;
     padding-left: 30px;
@@ -87,70 +87,72 @@
 <div class="nybanner" >
 	<img src="__PUBLIC__/phy-img/product-banner.jpg" style="width: 100%;" alt="">
 </div> 
-<Div class="Root">
+<div class="Root">
 	<div style="padding-top:85px; padding-bottom:60px; text-align:center; width:100%; overflow:hidden;">
 		<img src="__PUBLIC__/Myapp/Common/images/p1.png" >
 	</div>
 	
 	<div class="plist_ny row" style="height: 900px;">
-		<div class="col-md-2 col-md-offset-1">
+		<div class="col-md-3 ">
 			<div class="sidebar">
                 <div class="side-nav">
                     <a class="btn-sideNav current" href="javascript:void(0)">整流二极管</a>
                     <div class="sub-sideNav" style="display: block;">
-                        <a class="sub-item" href="javascript:void(0)">贴片</a>
-                        <a class="sub-item" href="javascript:void(0)">插件</a>
+                        <a class="sub-item" href="{:url('index/Product/index',['classify'=>'整流二极管贴片'])}">贴片</a>
+                        <a class="sub-item" href="{:url('index/Product/index',['classify'=>'整流二极管插片'])}">插件</a>
                     </div>
                     <a class="btn-sideNav current" href="javascript:void(0)">
                         肖特基二极管
                     </a>
                     <div class="sub-sideNav" style="display: block;">
-                        <a class="sub-item" href="javascript:void(0)">贴片</a>
-                        <a class="sub-item" href="javascript:void(0)">插件</a>
+                        <a class="sub-item" href="{:url('index/Product/index',['classify'=>'肖特基二极管贴片'])}">贴片</a>
+                        <a class="sub-item" href="{:url('index/Product/index',['classify'=>'肖特基二极管插片'])}">插件</a>
                     </div>
                     <a class="btn-sideNav current" href="javascript:void(0)">
                         稳压二极管
                     </a>
                     <div class="sub-sideNav" style="display: block;">
-                        <a class="sub-item" href="javascript:void(0)">贴片</a>
-                        <a class="sub-item" href="javascript:void(0)">插件</a>
+                        <a class="sub-item" href="{:url('index/Product/index',['classify'=>'稳压二极管贴片'])}">贴片</a>
+                        <a class="sub-item" href="{:url('index/Product/index',['classify'=>'稳压二极管插片'])}">插件</a>
                     </div>
                     <a class="btn-sideNav current" href="javascript:void(0)">
                         快恢复二极管
                     </a>
                     <div class="sub-sideNav" style="display: block;">
-                        <a class="sub-item" href="javascript:void(0)">贴片</a>
-                        <a class="sub-item" href="javascript:void(0)">插件</a>
+                        <a class="sub-item" href="{:url('index/Product/index',['classify'=>'快恢复二极管贴片'])}">贴片</a>
+                        <a class="sub-item" href="{:url('index/Product/index',['classify'=>'快恢复二极管插片'])}">插件</a>
                     </div>
                     <a class="btn-sideNav current" href="javascript:void(0)">
                         桥堆
                     </a>
                     <div class="sub-sideNav" style="display: block;">
-                        <a class="sub-item" href="javascript:void(0)">
-                            桥堆
-                        </a>
+                        <a class="sub-item" href="{:url('index/Product/index',['classify'=>'MIN整流桥-桥堆'])}">MIN整流桥-桥堆</a>
+                        <a class="sub-item" href="{:url('index/Product/index',['classify'=>'高结温MIN整流桥-桥堆'])}">高结温MIN整流桥-桥堆</a>
                     </div>
                     <a class="btn-sideNav current" href="javascript:void(0)">
                         超快恢复二极管
                     </a>
                     <div class="sub-sideNav" style="display: block;">
-                        <a class="sub-item" href="javascript:void(0)">贴片</a>
-                        <a class="sub-item" href="javascript:void(0)">插件</a>
+                        <a class="sub-item" href="{:url('index/Product/index',['classify'=>'超快恢复二极管贴片'])}">贴片</a>
+                        <a class="sub-item" href="{:url('index/Product/index',['classify'=>'超快恢复二极管插片'])}">插件</a>
                     </div>
                     <a class="btn-sideNav current" href="javascript:void(0)">
-                        玻璃钝化二极管
+                        玻璃钝化插件
                     </a>
                     <div class="sub-sideNav" style="display: block;">
-                        <a class="sub-item" href="javascript:void(0)">贴片</a>
-                        <a class="sub-item" href="javascript:void(0)">插件</a>
+                        <a class="sub-item" href="{:url('index/Product/index',['classify'=>'整流二极管贴片'])}">玻璃钝化普通整流管插件</a>
+                        <a class="sub-item" href="{:url('index/Product/index',['classify'=>'整流二极管贴片'])}">玻璃钝化快恢复整流管插件</a>
                     </div>
                     <a class="btn-sideNav current" href="javascript:void(0)">
                         TVS二极管
                     </a>
                     <div class="sub-sideNav" style="display: block;">
-                        <a class="sub-item" href="javascript:void(0)">贴片</a>
-                        <a class="sub-item" href="javascript:void(0)">插件</a>
+                        <a class="sub-item" href="{:url('index/Product/index',['classify'=>'TVS二极管贴片'])}">贴片</a>
+                        <a class="sub-item" href="{:url('index/Product/index',['classify'=>'TVS二极管插片'])}">插件</a>
                     </div>
+                    <a class="btn-sideNav current" href="{:url('index/Product/index',['classify'=>'半导体放电管'])}">
+                        半导体放电管
+                    </a>
 
                 </div>
             </div>
@@ -209,63 +211,143 @@
                     border: 1px solid #666
                 }
             </style>
-											<div class="ass">
-												<select name="filter" class="tee" two="" >
-							<option value="">全部</option><option value="">-</option>
-							<option value="">20</option>
-							<option value="">30</option>
-							
-							</select><select name="filter" class="tee" two="" >
-							<option value="">全部</option><option value="">-</option>
-							<option value="">20</option>
-							<option value="">30</option>
-							
-							</select><select name="filter" class="tee" two="" >
-							<option value="">全部</option><option value="">-</option>
-							<option value="">20</option>
-							<option value="">30</option>
-							
-							</select><select name="filter" class="tee" two="" >
-							<option value="">全部</option><option value="">-</option>
-							<option value="">20</option>
-							<option value="">30</option>
-							
-							</select><select name="filter" class="tee" two="" >
-							<option value="">全部</option><option value="">-</option>
-							<option value="">20</option>
-							<option value="">30</option>
-							
-							</select><select name="filter" class="tee" two="" >
-							<option value="">全部</option><option value="">-</option>
-							<option value="">20</option>
-							<option value="">30</option>
-							
-							</select><select name="filter" class="tee" two="" >
-							<option value="">全部</option><option value="">-</option>
-							<option value="">20</option>
-							<option value="">30</option>
-							
-							</select>
-													
-						
-						
-						
-						
-						
-						
-						
-												
-											</div>
-		</div>
+                    <div class="ass">
+                        <!-- <select name="filter" class="tee" two="" style="margin-bottom: 10px">
+                            <option value="">全部</option><option value="">-</option>
+                            <option value="">20</option>
+                            <option value="">30</option>
+                            
+                            </select> -->
+                        <form id="form1" method="POST">
+                            <input type="hidden" id="classify" name="classify" value="{$classify}">
+                            <input autocomplete="off"  style="width:11%"  list="url_list" name="vrrm" id="vrrm" class="sub"  placeholder="全部" value="" />
+                            <datalist id="url_list" style="height: 300px; overflow: auto ; ">
+                                <option value="全部" >
+                                {foreach name="fie_vrrm" item="v"}
+                                <option value="{$v}" >
+                                {/foreach}
+                            </datalist>
+
+                            <input autocomplete="off" style="width:12%"  list="url_list1" name="iava" id="iava" class="sub" placeholder="全部" value=""  />
+                            <datalist id="url_list1" style="height: 300px; overflow: auto ; ">
+                                <option value="全部" >
+                                {foreach name="fie_iava" item="v"}
+                                <option value="{$v}" >
+                                {/foreach}
+                            </datalist>
+                            <input autocomplete="off" style="width:12%"  list="url_list2" name="ifsma"  id="ifsma" class="sub"  placeholder="全部" value=""  />
+                            <datalist id="url_list2">
+                                {foreach name="fie_ifsma" item="v"}
+                                <option value="{$v}" >
+                                {/foreach}
+                            </datalist>
+                            <input autocomplete="off" style="width:12.5%"  list="url_list3" name="vfv" id="vfv" class="sub" placeholder="全部" value=""  />
+                            <datalist id="url_list3">
+                                <option value="全部" >
+                                {foreach name="fie_vfv" item="v"}
+                                <option value="{$v}" >
+                                {/foreach}
+                            </datalist>
+                            <input autocomplete="off" style="width:12%"  list="url_list4" name="ifa" id="ifa" class="sub"  placeholder="全部" value=""  />
+                            <datalist id="url_list4">
+                                <option value="全部" >
+                                {foreach name="fie_ifa" item="v"}
+                                <option value="{$v}" >
+                                {/foreach}
+                            </datalist>
+                            <input autocomplete="off" style="width:12%"  list="url_list5" name="ira" id="ira" class="sub"  placeholder="全部" value=""  />
+                            <datalist id="url_list5">
+                                <option value="全部" >
+                                {foreach name="fie_ira" item="v"}
+                                <option value="{$v}" >
+                                {/foreach}
+                            </datalist>
+                            <input autocomplete="off" style="width:11%"  list="url_list6" name="size" id="size" class="sub"  placeholder="全部" value=""  />
+                            <datalist id="url_list6">
+                                <option  value="全部" >
+                                {foreach name="fie_size" item="v"}
+                                <option value="{$v}" >
+                                {/foreach}
+                            </datalist>
+
+                        </form>
+                            
+              		
+                    </div>
+                    <table id="data_table" width="100%" border="0" cellpadding="3" cellspacing="0" style="margin:10px 0px;">
+                        <tbody>
+                            {volist name='list' id='data'}
+                            <tr>
+                                <td width="11%"  align="center" bgcolor="#EDEDED" style="border:1px #cccccc solid;padding-top:8px; ">{$data.name}</td>
+                                <td width="5%"  align="center" bgcolor="#EDEDED" style="border:1px #cccccc solid;padding-top:8px;">{$data.cover}</td>
+                                <td width="11%" align="center" bgcolor="#EDEDED" style="border:1px #cccccc solid;padding-top:8px;">{$data.vrrm}</td>
+                                <td width="11%" align="center" bgcolor="#EDEDED" style="border:1px #cccccc solid;padding-top:8px;">{$data.iava}</td>
+                                <td width="11%" align="center" bgcolor="#EDEDED" style="border:1px #cccccc solid;padding-top:8px;">{$data.ifsma}</td>
+                                <td  width="11%" align="center" bgcolor="#EDEDED" style="border:1px #cccccc solid;padding-top:8px;">{$data.vfv}</td>
+                                <td width="11%"  align="center" bgcolor="#EDEDED" style="border:1px #cccccc solid;padding-top:8px;">{$data.ifa}</td>
+                                <td width="11%" align="center" bgcolor="#EDEDED" style="border:1px #cccccc solid;padding-top:8px;">{$data.ira}</td>
+                                <td width="11%"  align="center" bgcolor="#EDEDED" style="border:1px #cccccc solid;padding-top:8px;">{$data.size}</td>
+                            </tr>
+                            {/volist}
+                        </tbody>
+                        
+                    </table>
+                    <div class='dataTables_paginate paging_simple_numbers' id="fenye" style="width:100%;margin:0 auto;margin-bottom: 10px;">{$list->render()}</div> 
+            </div>
+            
 	</div>
 	
 	
-</Div>
+</div>
 
 {include file="common/footer"}
 
 <script>
+$(".cur").attr('href',"javascript:void");
+function AjaxPage(page){
+    
+  $.get('/index/successcase/getAll',{ page:page},function (data) {
+    $('.little-content').html(data);
+  })
+}
+$('.on').hover(function(){
+  $.get('/index/successcase/all',function (data) {
+    $('.little-content').html(data);
+  })
+});
+$('.title-id').hover(function(){
+  var id = $(this).attr('title');
+  $.post('{:url("index/Product/index")}',{ 'id':id },function(data){
+    $('.little-content').html(data);
+  });
+});
+function AjaxDetailsPage(page){
+    var vrrm = $('#vrrm').val();
+    var vfv = $('#vfv').val();
+    var size = $('#size').val();
+    var ira = $('#ira').val();
+    var ifsma = $('#ifsma').val();
+    var ifa = $('#ifa').val();
+    var iava = $('#iava').val();
+    var classify = $('#classify').val();
+    
+  $.post('{:url("index/Product/index")}',{ page:page,vrrm:vrrm,vfv:vfv,size:size,ira:ira,ifsma:ifsma,ifa:ifa,iava:iava,classify:classify },function (data) {
+    //console.log($(data).find("#data_table").html());
+    $("#fenye").empty();
+    $("#fenye").append($(data).find("#fenye").html());
+    $('#data_table').html($(data).find("#data_table").html());
+    $(".cur").attr('href',"javascript:void");
+  })
+}
+
+
+
+
+
+
+    
 $(function(){
+    
 		  
 		$(window).scroll(function(e){h();})
         $(window).resize(function(){h();})
@@ -277,15 +359,11 @@ function h(){
 	 
 	if (scrolltop>115)
 	{
-		 
-		 
 		$('.gotop').show();
 		
 	}
 	else
 	{
-		  
-		 
 		$('.gotop').hide();
 		
 	}
@@ -301,6 +379,31 @@ $(function(){
 			return false;	
 		});
 });
+</script>
+ <script>
+     $(".sub").change(function(){
+        var url = "{:url('index/Product/index')}";
+        console.log($("form").serialize());
+        $.ajax({  
+            type : "POST",  
+            async : false,  //同步请求  
+            url : url,  
+            data : $("form").serialize(),
+            timeout:1000,  
+            success:function(dates){  
+                //console.log(dates);
+                $("#data_table").empty();
+                $("#fenye").empty();
+                //console.log($(dates).find("#data_table").html());
+                $("#data_table").append($(dates).find("#data_table").html());
+                $("#fenye").append($(dates).find("#fenye").html());
+          
+            },  
+            error: function() {  
+                alert("失败，请稍后再试！");  
+            }  
+        });  
+     });
 </script>
  <script>
 var page = 1;

@@ -9,10 +9,10 @@
 	<div id="menu">
 		<ul style="">
 			<li>
-				<a href="{:url('index/Index/index')}" {if condition="request()->controller() eq 'Index'"}class="on"{/if}>网站首页</a>
+				<a href="{:url('index/Index/index')}" {if condition="request()->controller() eq 'Index'"}class="on"{/if}>{$Think.lang.Index}</a>
 			</li>
 			<li>
-				<a href="{:url('index/About/index')}" {if condition="request()->controller() eq 'About'"}class="on"{/if}>关于赛特微</a>
+				<a href="{:url('index/About/index')}" {if condition="request()->controller() eq 'About'"}class="on"{/if}>{$Think.lang.About}</a>
 				
 					<ul class="chrid" style="margin-left: 90px;">
 						<li >
@@ -55,6 +55,10 @@
 			</li>
 			 <li>
 				<a   href="https://saitew.1688.com/"  target="_blank">网络商城</a>
+			</li>
+			<li>
+				<a  onclick="chanlang('zh')" href="javascript:void();" >中</a>/
+				<a  onclick="chanlang('en')" href="javascript:void();" >En</a>
 			</li>
 		</ul>
 	</div>

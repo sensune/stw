@@ -38,136 +38,100 @@
                         </div>
                     </div>
                     <div class="ibox-content">
-                        <form class="form-horizontal m-t" action="{:url('admin/product/product_add')}" method="POST" enctype="multipart/form-data" id="commentForm">
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label">产品名称：</label>
-                                <div class="col-sm-8">
-                                    <input id="cname" name="name" minlength="1" type="text" class="form-control" required="" aria-required="true">
+                            <form class="form-horizontal m-t" action="{:url('admin/product/product_add')}" method="POST" enctype="multipart/form-data" id="commentForm">
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">产品名称：</label>
+                                    <div class="col-sm-8">
+                                        <input id="cname" name="name" minlength="1" type="text" class="form-control" required="" aria-required="true" >
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label">封面：</label>
-                                <div class="col-sm-8">
-                                    <input  name="cover" minlength="1" type="file" class="form-control"  aria-required="false">
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">pdf：</label>
+                                    <div class="col-sm-8">
+                                        <input  name="cover" minlength="1" type="file" class="form-control"  aria-required="false">
+                                    </div>
                                 </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label">风扇直径：</label>
-                                <div class="col-sm-8">
-                                    <input id="cname" name="diameter" minlength="1" type="text" class="form-control" required="" aria-required="true" >
+    
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">最大重复峰值反向电压 VRRM(V)：</label>
+                                    <div class="col-sm-8">
+                                        <input id="cname" name="vrrm" minlength="1" type="text" class="form-control" required="" aria-required="true" >
+                                    </div>
                                 </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label">功率：</label>
-                                <div class="col-sm-8">
-                                    <input id="cname" name="work" minlength="1" type="text" class="form-control" required="" aria-required="true" >
+    
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">最大正向平均整流电流 I(AV)(A)：</label>
+                                    <div class="col-sm-8">
+                                        <input id="cname" name="iava" minlength="1" type="text" class="form-control" required="" aria-required="true" >
+                                    </div>
                                 </div>
-                            </div>
-                           
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label">转速：</label>
-                                <div class="col-sm-8">
-                                    <input id="cname" name="speed" minlength="1" type="text" class="form-control" required="" aria-required="true" >
+    
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">正向峰值浪涌电流@8.3ms正弦电波 IFSM(A)：</label>
+                                    <div class="col-sm-8">
+                                        <input id="cname" name="ifsma" minlength="1" type="text" class="form-control" required="" aria-required="true" >
+                                    </div>
                                 </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label">电源参数：</label>
-                                <div class="col-sm-8">
-                                    <input id="cname" name="power" minlength="1" type="text" class="form-control" required="" aria-required="true" >
+    
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">最大正向电压@TA=25℃ VF(V)：</label>
+                                    <div class="col-sm-8">
+                                        <input id="cname" name="vfv" minlength="1" type="text" class="form-control" required="" aria-required="true" >
+                                    </div>
                                 </div>
-                            </div>
-                           
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label">重量：</label>
-                                <div class="col-sm-8">
-                                    <input id="cname" name="weight" minlength="1" type="text" class="form-control" required="" aria-required="true">
+    
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">最大正向电压@TA=25℃ IF(A)：</label>
+                                    <div class="col-sm-8">
+                                        <input id="cname" name="ifa" minlength="1" type="text" class="form-control" required="" aria-required="true" >
+                                    </div>
                                 </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label">面积：</label>
-                                <div class="col-sm-8">
-                                    <input id="cname" name="area" minlength="1" type="text" class="form-control" required="" aria-required="true" >
+    
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">最大反向电流RRMTA=25℃ IR(µA)：</label>
+                                    <div class="col-sm-8">
+                                        <input id="cname" name="ira" minlength="1" type="text" class="form-control" required="" aria-required="true" >
+                                    </div>
                                 </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label">风量：</label>
-                                <div class="col-sm-8">
-                                    <input id="cname" name="blow" minlength="1" type="text" class="form-control" required="" aria-required="true" >
+    
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">封装形式  Package & Size：</label>
+                                    <div class="col-sm-8">
+                                        <input id="cname" name="size" minlength="1" type="text" class="form-control" required="" aria-required="true" >
+                                    </div>
                                 </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label">减速电机：</label>
-                                <div class="col-sm-8">
-                                    <input id="cname" name="gear" minlength="1" type="text" class="form-control" required="" aria-required="true" >
+    
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">产品分类：</label>
+                                    <select class=" col-sm-8" name="classify">
+                                        <option value="整流二极管贴片">整流二极管贴片</option>
+                                        <option value="整流二极管插片">整流二极管插片</option>
+                                        <option value="肖特基二极管贴片">肖特基二极管贴片</option>
+                                        <option value="肖特基二极管插片">肖特基二极管插片</option>
+                                        <option value="稳压二极管贴片">稳压二极管贴片</option>
+                                        <option value="稳压二极管插片">稳压二极管插片</option>
+                                        <option value="快恢复二极管贴片">快恢复二极管贴片</option>
+                                        <option value="快恢复二极管插片">快恢复二极管插片</option>
+                                        <option value="超快恢复二极管贴片">超快恢复二极管贴片</option>
+                                        <option value="超快恢复二极管插片">超快恢复二极管插片</option>
+                                        <option value="玻璃钝化二极管贴片">玻璃钝化二极管贴片</option>
+                                        <option value="玻璃钝化二极管插片">玻璃钝化二极管插片</option>
+                                        <option value="TVS二极管贴片">TVS二极管贴片</option>
+                                        <option value="TVS二极管插片">TVS二极管插片</option>
+                                        <option value="高结温MIN整流桥-桥堆">高结温MIN整流桥-桥堆</option>
+                                        <option value="MIN整流桥-桥堆">MIN整流桥-桥堆</option>
+                                    </select>
                                 </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label">变频器：</label>
-                                <div class="col-sm-8">
-                                    <input id="cname" name="frequency" minlength="1" type="text" class="form-control" required="" aria-required="true">
+    
+    
+    
+                                <div class="form-group">
+                                    <div class="col-sm-4 col-sm-offset-3">
+                                        <button class="btn btn-primary" type="submit">提交</button>
+                                    </div>
                                 </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label">轮毂：</label>
-                                <div class="col-sm-8">
-                                    <input id="cname" name="hub" minlength="1" type="text" class="form-control" required="" aria-required="true" >
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label">材质/厚度：</label>
-                                <div class="col-sm-8">
-                                    <input id="cname" name="material" minlength="1" type="text" class="form-control" required="" aria-required="true" >
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label">叶片数量：</label>
-                                <div class="col-sm-8">
-                                    <input id="cname" name="quantity" minlength="1" type="text" class="form-control" required="" aria-required="true">
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label">叶片颜色：</label>
-                                <div class="col-sm-8">
-                                    <input id="cname" name="color" minlength="1" type="text" class="form-control" required="" aria-required="true">
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label">应用范围：</label>
-                                <div class="col-sm-8">
-                                    <input id="cname" name="range" minlength="1" type="text" class="form-control" required="" aria-required="true">
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="col-sm-2 control-label">产品分类：</label>
-                                <select class=" col-sm-8" name="classify">
-                                    <option value="三叶扇">三叶扇</option>
-                                    <option value="四叶扇">四叶扇</option>
-                                    <option value="五叶扇">五叶扇</option>
-                                </select>
-                            </div>
-
-                            
-
-                            <div class="form-group">
-                                <div class="col-sm-4 col-sm-offset-3">
-                                    <button class="btn btn-primary" type="submit">提交</button>
-                                </div>
-                            </div>
-                        </form>
+                            </form>
                     </div>
                 </div>
 

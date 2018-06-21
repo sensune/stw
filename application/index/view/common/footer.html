@@ -52,3 +52,11 @@
 
 </div>
 </div>
+<script>
+    function chanlang(lang)
+    {
+        $.get("{:url('index/chanlang')}",{"lang":lang},function(d){
+            location.reload();
+        })
+    }
+</script>
