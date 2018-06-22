@@ -87,36 +87,8 @@ bottom:35px;}
  
 </head>
 <body>
-<div class="mmm">
-		<div>
-			<ul>
-				<li class="m1">
-					<a   href="index.htm" >网站首页<span></span></a>
-					 
-				</li>
-				<li class="m2">
-					<a   href="wap.about.htm" >关于赛特微<span></span></a>
-					 
-				</li>
-				<li class="m3">
-					<a class="submenu" href="wap.product.htm" >产品中心<span></span></a>
-					 
-				</li>
-				<li class="m4">
-					<a   href="wap.gsxw.htm" >新闻中心<span></span></a>
-					 
-				</li>
-			
-				<li>
-					<a href="wap.contact.html" >联系我们</a>
-				</li>
-				<li>
-					<a  href="https://saitew.1688.com/" target="_blank">在线商城</a>
-				</li>
-			</ul>
 
-		</div>
-</div> 
+	{include file="common/header_m"}
 
 
 <DIV class="wapper" id="block_mid">
@@ -130,25 +102,14 @@ bottom:35px;}
 	<div class="comdiv">
 		<div class="flexslider" style="margin-bottom:0px; position:relative">
 		   <ul class="slides">
+			 {foreach name="banner" item="v"}
 		   	 <li>
-				 
-				<a href="">
+				<a href="javascript:void()">
 					
-					<img src="__PUBLIC__/phy-img/pci1.jpg"  />
+					<img src="/public/{$v.cover}"  />
 				</a>
-			</li><li>
-				 
-				<a href="">
-					
-					<img src="__PUBLIC__/phy-img/pci2.jpg"  />
-				</a>
-			</li><li>
-				 
-				<a href="">
-					
-					<img src="__PUBLIC__/phy-img/pci3.jpg"  />
-				</a>
-			</li>			  
+			</li>
+			{/foreach}	  
 		   </ul>
 		    
 		</div>
@@ -308,7 +269,7 @@ bottom:35px;}
 			<Div class="comdiv" style="text-align:left; line-height:44px; color:#fff; padding-bottom:50px;font-size: 16px;">
 				<p>深圳市赛特微电子有限公司依托三十余年的专业经验，年产销二极管120亿只，产品包括表面贴装和轴向插接系列二极管 及其他特种器件等上千余个品种，同时也对外承接各种分立 器件的封装加工业务，可以为客户提供大批量、全系列、多品种、 专业化的一揽子解决方案。公司品种规格齐全，有普通整流、快速恢复、高效率、超快速、肖特基、整流桥、以及双向触发、 高压、瞬态抑制、开关、稳压等各种系列的二极管/整流桥。...			</Div>
 			<Div class="comdiv">
-				<a href="javascript:void(0);" ><img src="__PUBLIC__/Wap/Common/images/index4.png"  /></a>
+				<a href="{:url('index/about/index_m')}" ><img src="__PUBLIC__/Wap/Common/images/index4.png"  /></a>
 			</Div>
 		</div>
 	</div>
@@ -408,6 +369,7 @@ bottom:35px;}
 				
 				<div class="swiper-container">
 					<div class="swiper-wrapper">
+						
 						<div class="swiper-slide">
 							<a href="wap.php-s=-News-show-id-712.html" >
 							<div class="comdiv indexnews_tj">
@@ -417,7 +379,8 @@ bottom:35px;}
 								</div>
 							</div>
 							</a>
-						</div><div class="swiper-slide">
+						</div>
+						<div class="swiper-slide">
 							<a href="javascript:void(0);" >
 							<div class="comdiv indexnews_tj">
 								<img src="__PUBLIC__/pic/SMAF.jpg"  style="width:auto; height:100%" />
@@ -498,7 +461,8 @@ bottom:35px;}
 								</div>
 							</div>
 							</a>
-						</div><div class="swiper-slide">
+						</div>
+						<div class="swiper-slide">
 							<a href="javascript:void(0);" >
 							<div class="comdiv indexnews_tj">
 								<img src="__PUBLIC__/pic/SMAF.jpg"  style="width:auto; height:100%" />
@@ -550,7 +514,7 @@ bottom:35px;}
 				</li>							</ul>
 		</Div>
 		<Div class="comdiv" style=" padding-top:75px;">
-				<a href="wap.php-s=-News-index.html" >
+				<a href="{:url('index/News/index_m')}" >
 					<img src="__PUBLIC__/Wap/Common/images/index7.png"  />
 				</a>
 			</Div>

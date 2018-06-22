@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <title>公司新闻-赛特微</title>
+   <title>{$Think.lang.nwes1}-赛特微</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
  
@@ -62,61 +62,47 @@ $(function(){
 	<div class="pcate">
 		<ul>
 			<li class="fli">
-				<a  href="{:url('index/News/index')}" >公司新闻</a>
+				<a  href="{:url('index/News/index')}" >{$Think.lang.nwes1}</a>
 			</li><li class="">
-				<a class="on" class="" href="{:url('index/News/trade')}" >行业新闻</a>
+				<a class="on" class="" href="{:url('index/News/trade')}" >{$Think.lang.nwes2}</a>
 			</li>
 			<li class="">
-				<a class="" href="{:url('index/News/lore')}" >电子知识</a>
+				<a class="" href="{:url('index/News/lore')}" >{$Think.lang.nwes3}</a>
 			</li>						
 		</ul>
 	</div>
 	<div class="plist_ny">
 		<ul class="caseul newslist2">
 			<!--循环 start -->
+			{volist name='list' id='data'}
 			<li class="col-md-4">
 				<div class="plist_xwzx_x">
-					
-				
-				<a href="xwxqym.htm" >
+
+				<a href="{:url('index/News/detail',['id'=>$data.id])}" >
 					<div class="plist_ny_img">
-						<img src="__PUBLIC__/xwzx/04.jpg"  style=" width:auto">
+						<img src="/public/{$data.cover}"  style=" width:auto">
 					</div>
 					<div class="plist_ny_name">
-						第六届中国电子信息博览会暨第91届中国电子展				</div>
+						{php}
+						$content_01 = $data['content'];
+						$content_02 = htmlspecialchars_decode($content_01);//把一些预定义的 HTML 实体转换为字符
+						$content_03 = str_replace("&nbsp;"," ",$content_02);//将空格替换成空
+						$contents = strip_tags($content_03);//函数剥去字符串中的 HTML、XML 以及 PHP 的标签,获取纯文本内容
+						$con = mb_substr($contents, 0, 50,"utf-8");//返回字符串中的前100字符串长度的字符
+						echo $con;
+						{/php}
+					</div>
 				</a>
 				</div>
 			</li>
+			{/volist}
 		<!--循环 end	 -->
-			<li class="col-md-4">
-				<div class="plist_xwzx_x">
-					
-				
-				<a href="xwxqym.htm" >
-					<div class="plist_ny_img">
-						<img src="__PUBLIC__/xwzx/04.jpg"  style=" width:auto">
-					</div>
-					<div class="plist_ny_name">
-						第六届中国电子信息博览会暨第91届中国电子展				</div>
-				</a>
-				</div>
-			</li>
-			<li class="col-md-4">
-				<div class="plist_xwzx_x">
-					
-				
-				<a href="xwxqym.htm" >
-					<div class="plist_ny_img">
-						<img src="__PUBLIC__/xwzx/04.jpg"  style=" width:auto">
-					</div>
-					<div class="plist_ny_name">
-						第六届中国电子信息博览会暨第91届中国电子展				</div>
-				</a>
-				</div>
-			</li>					 
+		
+							 
 		
 			 
 		</ul>
+		<div style="width:35%;margin:0 auto;">{$list->render()}</div>
 	</div>
 	<!-- <div class="loadmorebar">
 		<a href="javascript:;" id="/index.php?s=/News/ajax1.html" lang="29" class="loadmore">点击查看更多</a>

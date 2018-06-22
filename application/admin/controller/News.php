@@ -18,7 +18,8 @@ class News extends Base
      */
     public function index()
     {
-        $data = Db::table('news')->select();
+        $type = input('param.type');
+        $data = Db::table('news')->where('type',$type)->select();
         $this->assign('data',$data);
         return $this->fetch();
     }
@@ -28,8 +29,9 @@ class News extends Base
      */
     public function news_add()
     {
+        $type = input('param.type');
         if (Request::instance()->isPost())
-        {
+        {   
             $file = request()->file('cover');
     		if(isset($file)){  
                 $info = $file->move(ROOT_PATH . 'public/uploads');  
@@ -50,6 +52,7 @@ class News extends Base
             	die('请选择一张图片');
             }
         }
+        $this->assign('type',$type);
         return $this->fetch();
     }
 

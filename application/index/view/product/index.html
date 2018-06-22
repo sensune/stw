@@ -279,7 +279,11 @@
                             {volist name='list' id='data'}
                             <tr>
                                 <td width="11%"  align="center" bgcolor="#EDEDED" style="border:1px #cccccc solid;padding-top:8px; ">{$data.name}</td>
-                                <td width="5%"  align="center" bgcolor="#EDEDED" style="border:1px #cccccc solid;padding-top:8px;">{$data.cover}</td>
+                                <td width="5%"  align="center" bgcolor="#EDEDED" style="border:1px #cccccc solid;padding-top:8px;">
+                                    {if condition="$data.cover"}
+                                        <a href="/public/{$data.cover}"><img src="__STATIC__/pdf.gif" alt=""></a>    
+                                    {/if}
+                                </td>
                                 <td width="11%" align="center" bgcolor="#EDEDED" style="border:1px #cccccc solid;padding-top:8px;">{$data.vrrm}</td>
                                 <td width="11%" align="center" bgcolor="#EDEDED" style="border:1px #cccccc solid;padding-top:8px;">{$data.iava}</td>
                                 <td width="11%" align="center" bgcolor="#EDEDED" style="border:1px #cccccc solid;padding-top:8px;">{$data.ifsma}</td>

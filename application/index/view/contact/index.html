@@ -67,50 +67,50 @@
 				<table>
 					<tr>
 						<td style="width: 80px;">
-							联系电话：
+							{$Think.lang.Online1}：
 						</td>
 						<td>
 							0755-83661636 83668012					</td>
 					</tr>
 					<tr>
 						<td>
-							邮箱地址：
+							{$Think.lang.Online2}：
 						</td>
 						<td>
 							2355647681@qq.com				</td>
 					</tr>
 					<tr>
 						<td>
-							公司地址：
+							{$Think.lang.Online3}
 						</td>
 						<td>
-							深圳市福田区上步工业区万源大厦412
+							{$Think.lang.Online3_1}
 						</td>
 					</tr>
 					<tr>
-						<td>门市地址：</td>
-						<td>深圳市福田区中航路新亚洲电子市场一期1C010</td>
+						<td>{$Think.lang.Online4}</td>
+						<td>{$Think.lang.Online4_1}</td>
 					</tr>
 					<tr>
-						<td>工厂地址：</td>
-						<td>东莞市凤岗镇金凤凰大道凤芝美工业园K栋</td>
+						<td>{$Think.lang.Online5}</td>
+						<td>{$Think.lang.Online5_1}</td>
 					</tr>
 				</table>
 			</div>
 			<div class="contact_right">
 				<ul>
 					<li>
-						<input type="text" id="name" onBlur="if(this.value=='') this.value='姓名';" onFocus="if(this.value=='姓名') this.value='';"  value="姓名" >
+						<input type="text" id="name" onBlur="if(this.value=='') this.value='姓名';" onFocus="if(this.value=='姓名') this.value='';"  value="{$Think.lang.name1}" >
 					</li>
 					<li style="float:right">
-						<input type="text" onBlur="if(this.value=='') this.value='电话';" onFocus="if(this.value=='电话') this.value='';" id="phone" value="电话" id="phone"  >
+						<input type="text" onBlur="if(this.value=='') this.value='电话';" onFocus="if(this.value=='电话') this.value='';" id="phone" value="{$Think.lang.telephone1}" id="phone"  >
 					</li>
 					<li style="border:0;">
-						<textarea onBlur="if(this.value=='') this.value='内容';" onFocus="if(this.value=='内容') this.value='';"  id="content">内容</textarea>
+						<textarea onBlur="if(this.value=='') this.value='内容';" onFocus="if(this.value=='内容') this.value='';"  id="content">{$Think.lang.content1}</textarea>
 					</li>
 				</ul>
 				<div style="text-align: center;">
-					<input class="liuyan" id="sub"  type="submit" value="留言">
+					<input class="liuyan" id="sub"  type="submit" value="{$Think.lang.content2}">
 				</div>
 			</div>
 		</div>

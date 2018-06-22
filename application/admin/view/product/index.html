@@ -65,7 +65,13 @@
                             {foreach name="data" item="v"}
                             <tr class="gradeX">
                                     <td>{$v.id}</td>
-                                    <td><a href="/public/{$v.cover}"><img src="__STATIC__/pdf.gif" alt=""></a></td>
+                                    <td>
+                                        {if condition="$v.cover"}
+                                            <a href="/public/{$v.cover}"><img src="__STATIC__/pdf.gif" alt=""></a>
+                                        {else}
+                                            <span aria-hidden="true">无</span>
+                                        {/if}
+                                    </td>
                                     <td align="center">{$v.name}</td>
                                     <td align="center">{$v.vrrm}</td>
                                     <td align="center">{$v.iava}</td>

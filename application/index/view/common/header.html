@@ -21,7 +21,7 @@
 					</ul>
 			</li>
 			<li>
-				<a href="{:url('index/Product/index')}" {if condition="request()->controller() eq 'Product'"}class="on"{/if} >产品中心</a>
+				<a href="{:url('index/Product/index')}" {if condition="request()->controller() eq 'Product'"}class="on"{/if} >{$Think.lang.chanpin}</a>
 				<ul class="chrid" style="    margin-left: 200px;">
 						<li>
 							<a href="product.htm" ><img src="__PUBLIC__/phy-img/cpzx.jpg" alt="" style="margin-top: 10px;" /></a>
@@ -30,22 +30,22 @@
 					</ul>
 			</li>
 			<li>
-				<a href="{:url('index/News/index')}" {if condition="request()->controller() eq 'News'"}class="on"{/if} >新闻中心</a>
+				<a href="{:url('index/News/index')}" {if condition="request()->controller() eq 'News'"}class="on"{/if} >{$Think.lang.xinwen}</a>
 				<ul class="chrid" style="    margin-left: 390px;width: 100px;background-color: white;text-align: center;">
 						<li class="font" style="margin-top: 20px;">
-							<a  href="{:url('index/News/index')}" >公司新闻</a>
+							<a  href="{:url('index/News/index')}" >{$Think.lang.nwes1}</a>
 							</li>
 							<li class="font">
-							<a  href="{:url('index/News/trade')}" >行业新闻</a>
+							<a  href="{:url('index/News/trade')}" >{$Think.lang.nwes2}</a>
 							</li>
 							<li class="font">
-							<a  href="{:url('index/News/lore')}" >电子知识</a>
+							<a  href="{:url('index/News/lore')}" >{$Think.lang.nwes3}</a>
 							</li>
 						
 					</ul>
 			</li>
 			<li>
-				<a href="{:url('index/Contact/index')}" {if condition="request()->controller() eq 'Contact'"}class="on"{/if} >联系我们</a>
+				<a href="{:url('index/Contact/index')}" {if condition="request()->controller() eq 'Contact'"}class="on"{/if} >{$Think.lang.lianxi}</a>
 				<ul class="chrid" style="    margin-left: 430px;">
 						<li>
 							<a href="{:url('index/Contact/index')}" ><img src="__PUBLIC__/phy-img/lxwm.jpg" alt="" style="margin-top: 10px;" /></a>
@@ -54,7 +54,7 @@
 					</ul>
 			</li>
 			 <li>
-				<a   href="https://saitew.1688.com/"  target="_blank">网络商城</a>
+				<a   href="https://saitew.1688.com/"  target="_blank">{$Think.lang.wangluo}</a>
 			</li>
 			<li>
 				<a  onclick="chanlang('zh')" href="javascript:void();" >中</a>/

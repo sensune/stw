@@ -1,18 +1,32 @@
 <?php
 namespace app\index\controller;
 
+use app\index\controller\Base;
 use think\Controller;
 use think\Db;
+
 
 class Index extends base
 {
     public function index()
     {
+        $banner = Db::name('banner')->select();
+        $news = Db::name('news')->select();
+        $product = Db::name('product')->select();
+        $this->assign('banner',$banner);
+        $this->assign('news',$news);
+        $this->assign('product',$product);
         return $this->fetch();
     }
 
     public function index_mo()
     {
+        $banner = Db::name('banner')->select();
+        $news = Db::name('news')->select();
+        $product = Db::name('product')->select();
+        $this->assign('banner',$banner);
+        $this->assign('news',$news);
+        $this->assign('product',$product);
         return $this->fetch();
     }
 
